@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>SET08101 - Interacting with the Window</title>
+		
+	</head>
+	
+	<body>
+	
+		<div id="output"></div>
+		<div id="output1"></div>
+		
+		<script>
+			
+			var out = document.getElementById("output");
+			out.innerHTML += window.navigator.appName
+			+ " " + window.navigator.appVersion
+			+ " " + window.navigator.appCodeName;
+			
+			var out1 = document.getElementById("output1");
+			out1.innerHTML += "Href: " + window.location.href
+				+ "<br>Protocol: " + window.location.protocol
+				+ "<br>Host: " + window.location.host
+				+ "<br>Path: " + window.location.pathname
+				+ "<br>Hash: " + window.location.hash;
+		</script>
+	</body>
+
+
+</html>
